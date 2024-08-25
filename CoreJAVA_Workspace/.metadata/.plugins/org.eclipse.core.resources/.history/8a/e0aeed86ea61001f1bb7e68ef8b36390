@@ -1,0 +1,17 @@
+package com.evergent.corejava.rakshitha.application5;
+
+import java.util.ArrayList;
+
+abstract class Library_User implements LibraryUser{
+	static ArrayList<String> li1=new ArrayList<>();
+	static ArrayList<String> li2=new ArrayList<>();
+	 public void show() {
+		 System.out.println("=================");
+			System.out.println("Enter 1 for:Kids");
+			System.out.println("Enter 2 for:Adults");
+			System.out.println("enter 3 for:show all library users");
+			System.out.println("Enter 4 for:Exit");
+			System.out.println("=================");
+	 }
+
+}

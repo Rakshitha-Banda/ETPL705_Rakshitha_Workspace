@@ -1,0 +1,28 @@
+package com.evergent.corejava.rakshitha.application4.copy;
+
+public class DiscountCalculator {
+		//overloading method
+	public double calculateDiscount(double totalAmount) {
+        if (totalAmount <= 100.00) {
+            return 0.00;
+        } else if (totalAmount <= 500.00) {
+            return 20.00;
+        } else if (totalAmount <= 1000.00) {
+            return 60.00;
+        } else {
+            return 100.00;
+        }
+    }
+	//overloading method
+	  public int calculateDiscount(int totalAmount) {
+	        if (totalAmount <= 100) {
+	            return 0;
+	        } else if (totalAmount <= 500) {
+	            return 20;
+	        } else if (totalAmount <= 1000) {
+	            return 60;
+	        } else {
+	            return 100;
+	        }
+	    }
+}

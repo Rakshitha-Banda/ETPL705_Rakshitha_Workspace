@@ -1,0 +1,31 @@
+package com.evergent.corejava.rakshitha.application5;
+
+public class AdultUser extends Library_User {
+	int age;
+	String bookType;
+	public void registerAccount(int age) throws AgeNotSupportException
+	{
+	
+	if(age<12) {
+		throw new AgeNotSupportException("Sorry, Age must be greater than 12 to register as an adult");
+	}
+		
+	else {
+		System.out.println("You have successfully registered under an Adult Account");
+	}
+	}
+	public void registerAccount(double age) {
+		System.out.println("age not be in double");
+	}
+	public void requestBook(String bookType) throws InvalidBookException
+	{
+		
+	if(bookType.equals("fiction")) {
+		System.out.println("Book Issued successfully, please return the book within 7 days");
+	}
+	else {
+		throw new InvalidBookException("Oops, you are allowed to take only adult Fiction books");
+	}
+	
+	}
+}

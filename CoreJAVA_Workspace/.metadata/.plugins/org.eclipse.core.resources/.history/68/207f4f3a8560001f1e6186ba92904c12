@@ -1,0 +1,32 @@
+package com.evergent.corejava.exceptionhandling;
+
+class ProductNotFoundException extends Exception{
+	public ProductNotFoundException(String mes) {
+		System.out.println("hello "+mes);
+	}
+}
+public class ProductImpl {
+	int pno=105;
+	public void myData() throws ProductNotFoundException{
+		if(pno>100) {
+			throw new ProductNotFoundException("there is no product");
+		}
+		else {
+			System.out.println("product are there");
+		}
+	}
+
+	public static void main(String[] args) {
+		try {
+			ProductImpl pro=new ProductImpl();
+			pro.myData();
+		}
+		catch(ProductNotFoundException e) {
+			System.out.println(e);
+			System.out.println(e.getMessage());
+		e.printStackTrace();
+		}
+
+	}
+
+}

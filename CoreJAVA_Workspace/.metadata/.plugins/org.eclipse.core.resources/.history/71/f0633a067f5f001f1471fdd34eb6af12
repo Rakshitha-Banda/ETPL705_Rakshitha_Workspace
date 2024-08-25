@@ -1,0 +1,19 @@
+package com.evergent.corejava.rakshitha.application4;
+
+abstract class Category implements Product {
+    protected String name;
+    protected int price;
+
+    public Category(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+}

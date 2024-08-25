@@ -1,0 +1,46 @@
+package com.evergent.corejava.rakshitha.application5;
+import java.util.*;
+
+class AgeNotSupportException extends RuntimeException{
+	public AgeNotSupportException(String msg) {
+		super(msg);
+	}
+}
+class AgeNotSupportException1 extends RuntimeException{
+	public AgeNotSupportException1(String msg) {
+		super(msg);
+	}
+}
+class InvalidBookException extends RuntimeException{
+	public InvalidBookException(String msg) {
+		super(msg);
+	}
+}
+class InvalidBookException1 extends RuntimeException{
+	public InvalidBookException1(String msg) {
+		super(msg);
+	}
+}
+public class LibraryInterfaceDemo {
+
+	public static void main(String[] args) {
+		KidsUser kid=new KidsUser();
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		String s=sc.nextLine();
+		kid.registerAccount(a);
+		//k.registerAccount(18);
+		kid.requestBook(s);
+		//k.requestBook("fiction");
+		AdultUser adu=new AdultUser();
+		int a1=sc.nextInt();
+		String s1=sc.nextLine();
+		adu.registerAccount(5);
+		//a.registerAccount(23);
+		adu.requestBook(s1);
+		//a.requestBook("fiction");
+		
+
+	}
+
+}

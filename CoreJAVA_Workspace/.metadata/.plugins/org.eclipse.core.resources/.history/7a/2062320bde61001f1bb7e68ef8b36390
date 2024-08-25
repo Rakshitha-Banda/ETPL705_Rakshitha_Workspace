@@ -1,0 +1,62 @@
+package com.evergent.corejava.rakshitha.application5;
+import java.util.*;
+
+class AgeNotSupportException extends RuntimeException{
+	public AgeNotSupportException(String msg) {
+		super(msg);
+	}
+}
+
+class InvalidBookException extends RuntimeException{
+	public InvalidBookException(String msg) {
+		super(msg);
+	}
+}
+class InvalidLoginException extends RuntimeException{
+	public InvalidLoginException(String msg) {
+		super (msg);
+	}
+}
+public class LibraryInterfaceDemo {
+
+	public static void main(String[] args) {
+		KidsUser kid=new KidsUser();
+		Scanner sc=new Scanner(System.in);
+		String Uname="rakshitha";
+		System.out.println("Enter user name");
+		String s=sc.nextLine();
+		try {
+		if(Uname.equals(s)) {
+			System.out.println("login succesfully");
+		}
+		else {
+			throw new InvalidLoginException("please enter correct username");
+		}}
+			
+		
+		catch(InvalidLoginException e) {
+			System.out.println(e);
+		}
+		System.out.println("enter age");
+		int a=sc.nextInt();
+		System.out.println("enter book");
+		String s1=sc.nextLine();
+		kid.registerAccount(a);
+		//k.registerAccount(18);
+		kid.requestBook(s1);
+		//k.requestBook("fiction");
+		AdultUser adu=new AdultUser();
+		System.out.println("enter age");
+		int a1=sc.nextInt();
+		System.out.println("enter book");
+		String s2=sc.nextLine();
+		adu.registerAccount(5);
+		//a.registerAccount(23);
+		adu.requestBook(s2);
+		//a.requestBook("fiction");}
+		
+		
+
+	}
+
+}

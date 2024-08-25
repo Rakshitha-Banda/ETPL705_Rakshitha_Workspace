@@ -1,0 +1,24 @@
+package com.evergent.corejava.exceptionhandling;
+
+public class sample {
+	public static void method1() throws Exception{
+		int a=0;
+		System.out.println(a);
+	}
+	public static void method2()throws Exception{
+		method1();
+		String s=null;
+		System.out.println(s.length());
+	}
+
+	public static void main(String[] args) {
+		try {
+			method2();
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+
+	}
+
+}

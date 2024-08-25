@@ -1,0 +1,30 @@
+package com.evergent.corejava.wrapperclass;
+
+public class WrapperClassDemo2 {
+
+	public static void main(String[] args) {
+		//float
+		float f1=4.5f;
+		Float f2=new Float(f1);
+		float f3=f2.floatValue();
+		System.out.println("float value is:"+f1);
+		System.out.println("float object value is:"+f2);
+		System.out.println("convert float object value to primitive:"+f3);
+		//double
+		double d1=4.5f;
+		Double d2=new Double(d1);
+		double d3=d2.doubleValue();
+		System.out.println("double value is:"+f1);
+		System.out.println("double object value is:"+f2);
+		System.out.println("convert double object value to primitive:"+f3);
+		//byte
+		byte b1=4.5f;
+		Byte b2=new Byte(b1);
+		byte b3=b2.byteValue();
+		System.out.println("byte value is:"+f1);
+		System.out.println("byte object value is:"+f2);
+		System.out.println("convert byte object value to primitive:"+f3);
+
+	}
+
+}

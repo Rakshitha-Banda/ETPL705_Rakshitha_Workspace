@@ -1,0 +1,12 @@
+package com.evergent.corejava.rakshitha.application5;
+
+ abstract class Library_User implements LibraryUser{
+	 public void show() {
+		 System.out.println("=================");
+			System.out.println("Enter 1 for:Kids");
+			System.out.println("Enter 2 for:Adults");
+			System.out.println("Enter 3 for:Exit");
+			System.out.println("=================");
+	 }
+
+}

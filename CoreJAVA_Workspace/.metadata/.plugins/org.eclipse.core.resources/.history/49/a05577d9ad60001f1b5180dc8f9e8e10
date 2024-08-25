@@ -1,0 +1,20 @@
+package com.evergent.corejava.rakshitha.application5;
+
+public class LibraryInterfaceDemo {
+
+	public static void main(String[] args) {
+		KidsUser k=new KidsUser();
+		k.registerAccount(10);
+		k.registerAccount(18);
+		k.requestBook("kids");
+		k.requestBook("fiction");
+		AdultUser a=new AdultUser();
+		a.registerAccount(5);
+		a.registerAccount(23);
+		a.requestBook("kids");
+		a.requestBook("fiction");
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.evergent.corejava.interface1;
+
+import com.evergent.corejava.javabeans.Employee;
+
+public class EmployeeImpl {
+
+	public static void main(String[] args) {
+		Employee emp=new Employee();
+		//initializing values through setter methods
+		emp.setEno(100);
+		emp.setEname("rakshitha");
+		emp.setSal(10000);
+		//getting values from getter methods
+		
+		System.out.println("Employee no:"+emp.getEno());
+		System.out.println("Employee name:"+emp.getEname());
+		System.out.println("Employee salary:"+emp.getSal());
+		
+		
+
+	}
+
+}

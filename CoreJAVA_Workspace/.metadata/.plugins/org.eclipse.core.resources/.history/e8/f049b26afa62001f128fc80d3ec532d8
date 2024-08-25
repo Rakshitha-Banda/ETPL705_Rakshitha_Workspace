@@ -1,0 +1,6 @@
+package com.evergent.corejava.rakshitha.application4.copy;
+//interface
+public interface Product {
+	String getName();
+    int getPrice();
+}

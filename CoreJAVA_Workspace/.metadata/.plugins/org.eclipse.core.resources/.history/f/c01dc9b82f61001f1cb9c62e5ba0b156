@@ -1,0 +1,26 @@
+package com.evergent.corejava.wrapperclass;
+
+import java.util.*;
+import java.util.ArrayList;
+
+public class ArrayList_wrapperclasses5 {
+
+	public static void main(String[] args) {
+		//jdk 1.44 we only add objects to it
+		int a=10;
+		Integer i1=new Integer(a);
+		ArrayList myList=new ArrayList();
+		myList.add(i1);
+		
+		Integer i2=new Integer(100);
+		myList.add(i2);
+		myList.add(new Integer(200));
+		System.out.println(myList);
+		//jdk 1.5 it taking primtive data types also implicitly doing autoboxing
+		ArrayList myList1=new ArrayList();
+		myList1.add(100);
+		System.out.println(myList1.get(0));
+
+	}
+
+}

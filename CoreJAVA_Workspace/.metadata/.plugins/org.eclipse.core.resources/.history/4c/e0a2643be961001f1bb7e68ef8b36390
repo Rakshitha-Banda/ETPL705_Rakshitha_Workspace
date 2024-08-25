@@ -1,0 +1,28 @@
+package com.evergent.corejava.rakshitha.application5;
+
+public class KidsUser extends Library_User {
+	
+	public void registerAccount(int age) throws AgeNotSupportException
+	{
+	if(age<12) {
+		System.out.println("You have successfully registered under a Kids Account");
+	}
+	else {
+		throw new AgeNotSupportException("Sorry, Age must be less than 12 to register as a kid");
+	}
+	}
+	public void registerAccount(double age) {
+		System.out.println("age not be in double");
+	}
+	public void requestBook(String bookType) throws InvalidBookException
+	{
+	
+	if(bookType.equals("kids")) {
+		System.out.println("Book Issued successfully, please return the book within 10 days");
+	}
+	else {
+		throw new InvalidBookException("Oops, you are allowed to take only kids books");
+	}
+	
+	}
+}
